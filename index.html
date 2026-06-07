@@ -18,11 +18,12 @@
   <main class="container">
     <section id="homeView" class="view active">
       <div class="hero card">
-        <h2>Allenamento rapido per il 18/06</h2>
-        <p>40 quiz a risposta multipla con correzione finale, soluzioni commentate, riferimenti normativi ed errori da evitare.</p>
+        <span class="eyebrow">Ripasso prova 18/06</span>
+        <h2>Allenamento e materiali in un unico posto</h2>
+        <p>40 quiz interattivi con correzione finale, più PDF di studio: dispensa completa, checklist, simulazione stampabile, bando e TUEL compatto.</p>
         <div class="actions">
           <button id="startBtn" class="primary">Avvia simulazione completa</button>
-          <button id="reviewBtn" class="secondary">Vedi soluzioni</button>
+          <button id="reviewBtn" class="secondary">Vedi soluzioni quiz</button>
           <button id="retryErrorsBtn" class="secondary">Rifai errori</button>
         </div>
         <div id="lastResult" class="last-result hidden"></div>
@@ -40,6 +41,90 @@
           <button id="casesBtn" class="ghost">Apri casi pratici</button>
         </div>
       </div>
+
+      <section class="materials-section">
+        <div class="section-title-row">
+          <div>
+            <span class="eyebrow">PDF di studio</span>
+            <h2>Materiali pronti da aprire o stampare</h2>
+          </div>
+          <p class="section-note">Consiglio: usare prima la dispensa completa, poi la checklist e infine la simulazione.</p>
+        </div>
+
+        <div class="materials-grid">
+          <article class="material-card important">
+            <div>
+              <span class="material-tag">Principale</span>
+              <h3>Dispensa completa</h3>
+              <p>Documento piu' ricco: materie del bando, priorita', articoli TUEL spiegati singolarmente, contabilità, 241/1990, appalti, trasparenza e pubblico impiego.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/dispensa-completa.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/dispensa-completa.pdf" download>Scarica</a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div>
+              <span class="material-tag">Ripasso</span>
+              <h3>Checklist finale</h3>
+              <p>Scheda pratica per spuntare gli argomenti: cosa sapere, norme, domande probabili ed errori da evitare.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/checklist-ripasso-finale.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/checklist-ripasso-finale.pdf" download>Scarica</a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div>
+              <span class="material-tag">Allenamento</span>
+              <h3>Simulazione stampabile</h3>
+              <p>Versione PDF della simulazione: 40 quiz, domande aperte, casi pratici, soluzioni, spiegazioni ed errori tipici.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/simulazione-stampabile.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/simulazione-stampabile.pdf" download>Scarica</a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div>
+              <span class="material-tag">Fonte guida</span>
+              <h3>Bando ufficiale</h3>
+              <p>Avviso della Provincia di Modena: profilo, prova, criteri e materie richieste.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/bando-provincia-modena.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/bando-provincia-modena.pdf" download>Scarica</a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div>
+              <span class="material-tag">Approfondimento</span>
+              <h3>TUEL compatto 1-269</h3>
+              <p>Dispensa compatta sul TUEL con copertura degli articoli 1-269 e focus sugli articoli da concorso.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/tuel-articoli-1-269.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/tuel-articoli-1-269.pdf" download>Scarica</a>
+            </div>
+          </article>
+
+          <article class="material-card muted">
+            <div>
+              <span class="material-tag">Extra</span>
+              <h3>Ripasso rapido originale LM</h3>
+              <p>Versione breve generata da NotebookLM. Utile come ripasso lampo, ma meno curata della checklist.</p>
+            </div>
+            <div class="material-actions">
+              <a class="primary link-btn" href="docs/ripasso-rapido-lm-originale.pdf" target="_blank" rel="noopener">Apri PDF</a>
+              <a class="secondary link-btn" href="docs/ripasso-rapido-lm-originale.pdf" download>Scarica</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section id="quizView" class="view">

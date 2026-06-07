@@ -1,24 +1,21 @@
 # Simulatore Concorso Istruttore Amministrativo - Provincia di Modena
 
-Webapp statica per allenamento quiz.
-
-## Uso locale
-Aprire `index.html` con un browser.
-
-## Pubblicazione su Cloudflare Pages
-Caricare la cartella con questi file:
-- index.html
-- style.css
-- app.js
-- questions.js
-
-Build command: lasciare vuoto.
-Output directory: `/` oppure cartella root del progetto.
+Webapp statica per il ripasso della prova del 18/06.
 
 ## Funzioni
-- 40 quiz A/B/C/D
-- correzione finale
-- soluzioni commentate
-- salvataggio in localStorage
-- rifai solo errori
-- domande aperte e casi pratici
+
+- Quiz interattivo da 40 domande con risposta A/B/C/D
+- Correzione automatica con punteggio, percentuale e risultato in trentesimi
+- Soluzioni commentate con riferimento normativo ed errore da evitare
+- Modalita' "rifai errori"
+- Domande aperte e casi pratici
+- Sezione Materiali PDF con dispensa completa, checklist, simulazione stampabile, bando e TUEL compatto
+
+## Pubblicazione su Cloudflare Pages
+
+Framework preset: None
+Build command: lasciare vuoto
+Build output directory: / oppure .
+Root directory: /
+
+Tutti i file devono stare nella root del repository, con la cartella `docs/` inclusa.
