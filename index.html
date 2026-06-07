@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulatore Concorso Istruttore Amministrativo - Provincia di Modena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Simulatore Concorso</h1>
+      <p>Istruttore Amministrativo - Provincia di Modena</p>
+    </div>
+    <button id="resetBtn" class="ghost small">Azzera dati</button>
+  </header>
+
+  <main class="container">
+    <section id="homeView" class="view active">
+      <div class="hero card">
+        <h2>Allenamento rapido per il 18/06</h2>
+        <p>40 quiz a risposta multipla con correzione finale, soluzioni commentate, riferimenti normativi ed errori da evitare.</p>
+        <div class="actions">
+          <button id="startBtn" class="primary">Avvia simulazione completa</button>
+          <button id="reviewBtn" class="secondary">Vedi soluzioni</button>
+          <button id="retryErrorsBtn" class="secondary">Rifai errori</button>
+        </div>
+        <div id="lastResult" class="last-result hidden"></div>
+      </div>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Domande aperte</h3>
+          <p>10 domande brevi con risposta modello.</p>
+          <button id="openBtn" class="ghost">Apri domande aperte</button>
+        </div>
+        <div class="card">
+          <h3>Casi pratici</h3>
+          <p>5 casi amministrativo-gestionali con soluzione guidata.</p>
+          <button id="casesBtn" class="ghost">Apri casi pratici</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="quizView" class="view">
+      <div class="card quiz-card">
+        <div class="progress-row">
+          <span id="progressText">Domanda 1 di 40</span>
+          <span id="answeredText">0 risposte date</span>
+        </div>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p id="topicText" class="topic"></p>
+        <h2 id="questionText"></h2>
+        <div id="optionsBox" class="options"></div>
+        <div class="nav-row">
+          <button id="prevBtn" class="secondary">Indietro</button>
+          <button id="nextBtn" class="primary">Avanti</button>
+          <button id="finishBtn" class="primary hidden">Concludi simulazione</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultView" class="view">
+      <div class="card result-card">
+        <h2>Risultato simulazione</h2>
+        <div id="scoreBox" class="score-box"></div>
+        <div id="wrongList" class="wrong-list"></div>
+        <div class="actions">
+          <button id="fullReviewBtn" class="primary">Vedi correzione completa</button>
+          <button id="retryErrorsBtn2" class="secondary">Rifai solo errori</button>
+          <button id="newQuizBtn" class="ghost">Nuova simulazione</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutionsView" class="view">
+      <div class="section-head">
+        <h2>Soluzioni commentate</h2>
+        <button class="ghost backHome">Torna alla home</button>
+      </div>
+      <div id="solutionsBox" class="solution-list"></div>
+    </section>
+
+    <section id="openView" class="view">
+      <div class="section-head">
+        <h2>Domande aperte brevi</h2>
+        <button class="ghost backHome">Torna alla home</button>
+      </div>
+      <div id="openBox" class="solution-list"></div>
+    </section>
+
+    <section id="casesView" class="view">
+      <div class="section-head">
+        <h2>Casi pratici</h2>
+        <button class="ghost backHome">Torna alla home</button>
+      </div>
+      <div id="casesBox" class="solution-list"></div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
