@@ -42,18 +42,274 @@
         </div>
       </div>
 
-      <section class="mindmap-section">
-        <article class="card mindmap-card">
+      <section class="guided-map-section">
+        <div class="section-title-row">
           <div>
-            <span class="eyebrow">Mappa mentale interattiva</span>
-            <h2>Ripasso visuale in NotebookLM</h2>
-            <p>Apri la mappa mentale condivisa su NotebookLM per navigare i rami del programma: TUEL, contabilità, procedimento amministrativo, pubblico impiego, trasparenza, contratti pubblici e casi pratici.</p>
-            <p class="section-note">Nota: il link funziona se la condivisione dell'artifact NotebookLM resta attiva. Se Google chiede l'accesso, va riaperta la condivisione da NotebookLM.</p>
+            <span class="eyebrow">Mappa guidata interna</span>
+            <h2>Ripasso per collegamenti</h2>
           </div>
-          <div class="actions">
-            <a class="primary link-btn" href="https://notebooklm.google.com/notebook/0d026be4-b2e8-4692-acb3-d115ad23efc0/artifact/ee1c531a-bed8-468d-bc84-5d86e5e6ec06?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_" target="_blank" rel="noopener">Apri mappa mentale</a>
-          </div>
-        </article>
+          <p class="section-note">Apri i rami: materia → concetto → norma → domanda probabile → errore da evitare.</p>
+        </div>
+
+        <div class="map-toolbar">
+          <button id="expandMapBtn" class="secondary">Apri tutti i rami</button>
+          <button id="collapseMapBtn" class="ghost">Chiudi tutti</button>
+          <a class="ghost link-btn" href="https://notebooklm.google.com/notebook/0d026be4-b2e8-4692-acb3-d115ad23efc0/artifact/ee1c531a-bed8-468d-bc84-5d86e5e6ec06?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_" target="_blank" rel="noopener">Mappa NotebookLM</a>
+        </div>
+
+        <div id="guidedMap" class="guided-map card">
+          <details open>
+            <summary>TUEL - Ordinamento enti locali</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Autonomia e funzioni</summary>
+                <div class="map-leaf">
+                  <p><strong>Concetto:</strong> gli enti locali sono autonomi, ma non sovrani. Hanno autonomia statutaria, normativa, organizzativa, amministrativa, impositiva e finanziaria.</p>
+                  <p><strong>Norme:</strong> artt. 3, 6, 7, 13, 14 TUEL.</p>
+                  <p><strong>Domanda probabile:</strong> quale autonomia non possiede il Comune?</p>
+                  <p><strong>Errore da evitare:</strong> dire autonomia giurisdizionale o confondere autonomia con sovranità.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Organi politici dell'ente</summary>
+                <div class="map-branch">
+                  <details>
+                    <summary>Consiglio - art. 42 TUEL</summary>
+                    <div class="map-leaf">
+                      <p><strong>Ruolo:</strong> indirizzo e controllo politico-amministrativo.</p>
+                      <p><strong>Atti tipici:</strong> statuto, regolamenti, bilancio, rendiconto, piani, convenzioni.</p>
+                      <p><strong>Domanda probabile:</strong> chi approva bilancio e rendiconto?</p>
+                      <p><strong>Errore:</strong> attribuire al Consiglio atti gestionali come gare, contratti o determine.</p>
+                    </div>
+                  </details>
+                  <details>
+                    <summary>Giunta - art. 48 TUEL</summary>
+                    <div class="map-leaf">
+                      <p><strong>Ruolo:</strong> organo esecutivo; collabora con Sindaco/Presidente.</p>
+                      <p><strong>Concetto chiave:</strong> competenza residuale sugli atti di governo non riservati ad altri organi.</p>
+                      <p><strong>Domanda probabile:</strong> chi approva il PEG?</p>
+                      <p><strong>Errore:</strong> dire che la Giunta approva il bilancio: lo propone, il Consiglio lo approva.</p>
+                    </div>
+                  </details>
+                  <details>
+                    <summary>Sindaco / Presidente - artt. 50 e 54 TUEL</summary>
+                    <div class="map-leaf">
+                      <p><strong>Art. 50:</strong> vertice dell'amministrazione locale, rappresenta l'ente e nomina responsabili/dirigenti.</p>
+                      <p><strong>Art. 54:</strong> Sindaco come ufficiale del Governo per funzioni statali, sicurezza urbana e incolumità pubblica.</p>
+                      <p><strong>Domanda probabile:</strong> in che veste il Sindaco emana ordinanze urgenti per sicurezza urbana?</p>
+                      <p><strong>Errore:</strong> confondere capo del Comune con ufficiale del Governo.</p>
+                    </div>
+                  </details>
+                  <details>
+                    <summary>Dirigenti / Responsabili - artt. 107 e 109 TUEL</summary>
+                    <div class="map-leaf">
+                      <p><strong>Ruolo:</strong> gestione tecnica, amministrativa e finanziaria.</p>
+                      <p><strong>Atti tipici:</strong> determine, contratti, bandi, gare, concorsi, impegni di spesa.</p>
+                      <p><strong>Domanda probabile:</strong> chi firma gli atti che impegnano l'ente verso l'esterno?</p>
+                      <p><strong>Errore:</strong> attribuire al Sindaco o assessore la gestione concreta.</p>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details>
+                <summary>Segretario e controlli</summary>
+                <div class="map-leaf">
+                  <p><strong>Segretario:</strong> assistenza giuridico-amministrativa, verbalizzazione, supporto alla legalità.</p>
+                  <p><strong>Controlli:</strong> regolarità amministrativa e contabile, controllo di gestione, controllo strategico.</p>
+                  <p><strong>Norme:</strong> artt. 97, 99, 147, 147-bis TUEL.</p>
+                  <p><strong>Errore:</strong> considerare il Segretario un organo politico.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Crisi finanziaria dell'ente</summary>
+                <div class="map-leaf">
+                  <p><strong>Deficitario:</strong> campanello d'allarme con parametri negativi.</p>
+                  <p><strong>Predissesto:</strong> piano di riequilibrio finanziario pluriennale per evitare il dissesto.</p>
+                  <p><strong>Dissesto:</strong> l'ente non riesce a garantire servizi indispensabili o pagare debiti liquidi ed esigibili.</p>
+                  <p><strong>Norme:</strong> artt. 242, 243-bis, 244 TUEL.</p>
+                  <p><strong>Errore:</strong> usare deficitario, predissesto e dissesto come sinonimi.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Contabilità enti locali</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Programmazione: DUP → Bilancio → PEG</summary>
+                <div class="map-leaf">
+                  <p><strong>DUP:</strong> documento strategico e operativo; precede il bilancio.</p>
+                  <p><strong>Bilancio:</strong> autorizza entrate e spese, approvato dal Consiglio.</p>
+                  <p><strong>PEG:</strong> assegna obiettivi e risorse ai dirigenti, approvato dalla Giunta.</p>
+                  <p><strong>Norme:</strong> artt. 151, 162, 169, 170 TUEL e D.Lgs. 118/2011.</p>
+                  <p><strong>Errore:</strong> confondere PEG e DUP o attribuire il PEG al Consiglio.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Spesa: impegno → liquidazione → ordinazione → pagamento</summary>
+                <div class="map-leaf">
+                  <p><strong>Impegno:</strong> nasce l'obbligazione e si vincola la somma.</p>
+                  <p><strong>Liquidazione:</strong> si verifica la prestazione e si determina l'importo da pagare.</p>
+                  <p><strong>Ordinazione:</strong> mandato al tesoriere.</p>
+                  <p><strong>Pagamento:</strong> uscita effettiva del denaro.</p>
+                  <p><strong>Norme:</strong> artt. 183 e 184 TUEL.</p>
+                  <p><strong>Errore:</strong> dire che l'impegno è il pagamento.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Residui, FPV e FCDE</summary>
+                <div class="map-leaf">
+                  <p><strong>Residuo attivo:</strong> entrata accertata ma non ancora incassata.</p>
+                  <p><strong>Residuo passivo:</strong> spesa impegnata ma non ancora pagata.</p>
+                  <p><strong>FPV:</strong> copre spese già avviate ma esigibili in anni successivi.</p>
+                  <p><strong>FCDE:</strong> accantonamento per entrate di difficile riscossione.</p>
+                  <p><strong>Errore:</strong> pensare che FCDE sia denaro liberamente spendibile.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Legge 241/1990 - Procedimento amministrativo</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Procedimento e motivazione</summary>
+                <div class="map-leaf">
+                  <p><strong>Procedimento:</strong> percorso con cui la PA arriva a un provvedimento.</p>
+                  <p><strong>Motivazione:</strong> deve indicare presupposti di fatto e ragioni giuridiche.</p>
+                  <p><strong>Norme:</strong> artt. 1, 2, 3, 5, 6 L. 241/1990.</p>
+                  <p><strong>Domanda probabile:</strong> cosa deve contenere la motivazione?</p>
+                  <p><strong>Errore:</strong> limitarsi a citare una norma senza spiegare i fatti.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Partecipazione, preavviso di rigetto e accesso</summary>
+                <div class="map-leaf">
+                  <p><strong>Comunicazione di avvio:</strong> informa l'interessato dell'inizio del procedimento.</p>
+                  <p><strong>Preavviso di rigetto:</strong> nei procedimenti a istanza di parte, prima del no definitivo.</p>
+                  <p><strong>Accesso documentale:</strong> serve interesse diretto, concreto e attuale.</p>
+                  <p><strong>Norme:</strong> artt. 7, 10-bis, 22 L. 241/1990.</p>
+                  <p><strong>Errore:</strong> confondere accesso documentale con accesso civico.</p>
+                </div>
+              </details>
+              <details>
+                <summary>SCIA, silenzio-assenso e autotutela</summary>
+                <div class="map-leaf">
+                  <p><strong>SCIA:</strong> attività avviabile subito, con controlli successivi.</p>
+                  <p><strong>Silenzio-assenso:</strong> il silenzio può valere come accoglimento, salvo eccezioni.</p>
+                  <p><strong>Annullamento:</strong> rimuove un atto illegittimo.</p>
+                  <p><strong>Revoca:</strong> elimina un atto valido per nuovo interesse pubblico o mutamento situazione.</p>
+                  <p><strong>Errore:</strong> confondere annullamento e revoca.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Pubblico impiego e codice di comportamento</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Rapporto di lavoro pubblico</summary>
+                <div class="map-leaf">
+                  <p><strong>Fonte:</strong> D.Lgs. 165/2001, CCNL e codice civile, salvo regole speciali.</p>
+                  <p><strong>Principio chiave:</strong> accesso tramite concorso e separazione politica/gestione.</p>
+                  <p><strong>Errore:</strong> pensare che il dipendente pubblico risponda agli assessori per la gestione tecnica.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Doveri, regali e conflitto di interessi</summary>
+                <div class="map-leaf">
+                  <p><strong>Doveri:</strong> diligenza, lealtà, imparzialità, correttezza verso il pubblico.</p>
+                  <p><strong>Regali:</strong> ammessi solo se d'uso e di modico valore, orientativamente entro 150 euro salvo limiti più bassi.</p>
+                  <p><strong>Conflitto:</strong> obbligo di astensione e segnalazione al dirigente.</p>
+                  <p><strong>Errore:</strong> considerare il codice di comportamento come solo morale: può dare responsabilità disciplinare.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Whistleblowing</summary>
+                <div class="map-leaf">
+                  <p><strong>Concetto:</strong> tutela chi segnala illeciti conosciuti per ragioni di lavoro.</p>
+                  <p><strong>Da ricordare:</strong> riservatezza dell'identità e divieto di ritorsioni.</p>
+                  <p><strong>Errore:</strong> trattare la segnalazione come una lamentela ordinaria.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Trasparenza e anticorruzione</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Trasparenza e accesso civico</summary>
+                <div class="map-leaf">
+                  <p><strong>Accesso civico semplice:</strong> riguarda documenti che la PA doveva pubblicare e non ha pubblicato.</p>
+                  <p><strong>Accesso civico generalizzato:</strong> chiunque può chiedere dati e documenti, salvo limiti.</p>
+                  <p><strong>Accesso documentale:</strong> richiede interesse diretto, concreto e attuale.</p>
+                  <p><strong>Errore:</strong> usare la stessa regola per i tre accessi.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Anticorruzione: ANAC, RPCT, PIAO</summary>
+                <div class="map-leaf">
+                  <p><strong>ANAC:</strong> autorità nazionale anticorruzione.</p>
+                  <p><strong>RPCT:</strong> responsabile prevenzione corruzione e trasparenza, di norma il Segretario negli enti locali.</p>
+                  <p><strong>PIAO:</strong> assorbe anche la programmazione anticorruzione e trasparenza.</p>
+                  <p><strong>Errore:</strong> pensare che l'anticorruzione sia solo repressione penale: è soprattutto prevenzione organizzativa.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Contratti pubblici - D.Lgs. 36/2023</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Principi e RUP</summary>
+                <div class="map-leaf">
+                  <p><strong>Principio del risultato:</strong> affidamento ed esecuzione tempestivi, efficienti e di qualità.</p>
+                  <p><strong>Principio della fiducia:</strong> valorizza iniziativa e responsabilità dei funzionari.</p>
+                  <p><strong>RUP:</strong> Responsabile Unico del Progetto, segue programmazione, affidamento ed esecuzione.</p>
+                  <p><strong>Errore:</strong> chiamarlo ancora solo Responsabile del procedimento nel nuovo Codice.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Affidamento diretto e determina a contrarre</summary>
+                <div class="map-leaf">
+                  <p><strong>Affidamento diretto:</strong> ammesso sotto soglia, per servizi/forniture sotto 140.000 euro e lavori sotto 150.000 euro.</p>
+                  <p><strong>Determina a contrarre:</strong> indica oggetto, importo, finalità, contraente o modalità di scelta, copertura e CIG quando previsto.</p>
+                  <p><strong>Errore:</strong> dimenticare copertura finanziaria, CIG o motivazione della scelta.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details>
+            <summary>Casi pratici e logica da esame</summary>
+            <div class="map-branch">
+              <details>
+                <summary>Quando leggo una traccia pratica</summary>
+                <div class="map-leaf">
+                  <p><strong>Passo 1:</strong> capire la materia: accesso, spesa, appalto, personale, trasparenza.</p>
+                  <p><strong>Passo 2:</strong> individuare l'organo competente: Consiglio, Giunta, Sindaco, dirigente/responsabile.</p>
+                  <p><strong>Passo 3:</strong> citare l'atto corretto: delibera, determina, ordinanza, comunicazione, provvedimento.</p>
+                  <p><strong>Passo 4:</strong> indicare la norma e l'errore da evitare.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Errori frequenti da evitare</summary>
+                <div class="map-leaf">
+                  <p>Dire che la Giunta approva il bilancio.</p>
+                  <p>Dire che il Sindaco firma determine, contratti o impegni di spesa.</p>
+                  <p>Confondere art. 50 e art. 54 TUEL.</p>
+                  <p>Confondere accesso documentale, civico semplice e civico generalizzato.</p>
+                  <p>Confondere impegno, liquidazione e pagamento.</p>
+                  <p>Confondere revoca e annullamento d'ufficio.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
       </section>
 
       <section class="materials-section">

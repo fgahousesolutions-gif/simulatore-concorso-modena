@@ -112,3 +112,11 @@ $('casesBtn').onclick=renderCases;
 document.querySelectorAll('.backHome').forEach(b=>b.onclick=()=>show('homeView'));
 $('resetBtn').onclick=()=>{ if(confirm('Vuoi cancellare risposte e risultati salvati?')){ localStorage.removeItem(STORAGE_KEY); answers={}; renderLastResult(); show('homeView'); } };
 renderLastResult();
+
+const guidedMap = document.getElementById('guidedMap');
+const expandMapBtn = document.getElementById('expandMapBtn');
+const collapseMapBtn = document.getElementById('collapseMapBtn');
+if (guidedMap && expandMapBtn && collapseMapBtn) {
+  expandMapBtn.onclick = () => guidedMap.querySelectorAll('details').forEach(d => d.open = true);
+  collapseMapBtn.onclick = () => guidedMap.querySelectorAll('details').forEach((d, idx) => d.open = idx === 0);
+}
