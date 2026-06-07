@@ -19,3 +19,8 @@ Build output directory: / oppure .
 Root directory: /
 
 Tutti i file devono stare nella root del repository, con la cartella `docs/` inclusa.
+
+
+## Mappa mentale NotebookLM
+
+La home include un pulsante per aprire la mappa mentale interattiva condivisa su NotebookLM. Il link funziona se la condivisione dell'artifact resta attiva nel notebook.
